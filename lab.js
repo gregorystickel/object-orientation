@@ -166,7 +166,7 @@ console.log(totalPopulation(states));
 let food = {
   carb: 'string1',
   fat: `string2`,
-  protein: 'string3'
+  protein: 'milk'
 }
 
 let ingredients = obj => {
@@ -199,6 +199,9 @@ var user = {
 */
 
 //Code Here
+user[`name`] = `Bryan G. Smith`;
+user[`email`] =  'bryan.smith@devmountain';
+console.log(user);
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
@@ -206,6 +209,8 @@ var user = {
 */
 
 //Code Here
+delete user.age;
+console.log(user);
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
@@ -215,6 +220,16 @@ var user = {
 */
 
 //Code here
+class Cat {
+  constructor( name, age, color ){ 
+      this.name = name;
+      this.age = age;
+      this.color = color;
+  }
+}
+
+let cat1 = new Cat (`George`, 3, `black`);
+console.log(cat1.name);
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
