@@ -163,6 +163,22 @@ console.log(totalPopulation(states));
 */
 
 //Code Here
+let food = {
+  carb: 'string1',
+  fat: `string2`,
+  protein: 'string3'
+}
+
+let ingredients = obj => {
+  let { carb } = obj;
+  let { fat } = obj;
+  let { protein } =obj;
+  const arr = [];
+  arr.push(carb, fat, protein);
+  return arr;
+}
+
+console.log(ingredients(food));
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
