@@ -288,7 +288,7 @@ class Phone {
   }
   sell () {
     this.sold = true;
-    console.log('${this.brand} ${this.model} has been sold.')
+    console.log(`${this.brand} ${this.model} has been sold.`)
   }
   changePrice(newPrice) {
     this.price = newPrice;
@@ -329,7 +329,7 @@ console.log(SamsungGalaxy);
 
 //Code Here
 ApplePhone.sell();
-console.log(ApplePhone);
+console.log(ApplePhone.sold);
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
@@ -346,8 +346,10 @@ const colors = {
   text: "yellow",
 };
 //do not edit this object
-
+ 
 //Code Here
+let colorsCopy = {...colors};
+console.log(colorsCopy);
 
 /*
  Now use the spread operator to combine the following 2 objects into one. 
@@ -374,8 +376,10 @@ const shippingInfo = {
 //do not edit the objects above
 
 //Code Here
+let helensInfo = {...contactInfo, ...shippingInfo};
 
 //Print helensInfo to see what it looks like, there should be no repeating properties.
+console.log(helensInfo);
 
 //////////////////////////// PROBLEM 16 ////////////////////////////
 
