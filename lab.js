@@ -240,6 +240,18 @@ console.log(cat1.name);
 */
 
 //Code here
+class Wizard {
+  constructor(name,age,favoriteSpell ){
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
+  }
+  castSpell = () => {
+    console.log(`${this.name} has cast ${this.favoriteSpell}`);
+  }
+}
+let wizard1 = new Wizard (`Ghandalf`, 600, `unknown spell`);
+wizard1.castSpell();
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
@@ -265,6 +277,23 @@ console.log(cat1.name);
 */
 
 //Code Here
+class Phone {
+  constructor (brand, model, storage, color, price) {
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.price = price;
+    this.sold = false;
+  }
+  sell () {
+    this.sold = true;
+    console.log('${this.brand} ${this.model} has been sold.')
+  }
+  changePrice(newPrice) {
+    this.price = newPrice;
+  }
+}
 
 /*
     Next make three new phone instances using your class.
@@ -277,6 +306,9 @@ console.log(cat1.name);
 */
 
 //Code Here
+let SamsungGalaxy = new Phone (`Samsung`, 'Galaxy', 128, `black`, 1000);
+let ApplePhone = new Phone (`Apple`, 'Iphone', 256, `blue`, 1200);
+let GooglePhone = new Phone (`Google`, 'Pixel', 128, `gray`, 800);
 
 /* 
   Call the changePrice function on one of your phones, 
@@ -286,6 +318,8 @@ console.log(cat1.name);
 */
 
 //Code Here
+SamsungGalaxy.changePrice(500);
+console.log(SamsungGalaxy);
 
 /*
   Now call the sell method on one of your other phone objects
@@ -294,6 +328,8 @@ console.log(cat1.name);
 */
 
 //Code Here
+ApplePhone.sell();
+console.log(ApplePhone);
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
 
