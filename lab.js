@@ -91,6 +91,12 @@ var carDetails = {
 */
 
 //Code Here
+let { color } = carDetails;
+let { make } = carDetails;
+let { model } = carDetails;
+let { year } = carDetails;
+console.log(color, make, model, year);
+
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
@@ -99,14 +105,23 @@ var carDetails = {
   Use object destructuring to save the object properties to new variables. 
   The property names are firstName, lastName, and title.
 */
+let person = {
+  firstName: 'Joseph',
+  lastName: `Smith`,
+  title: `agent`  
+}
 
 function greeting(obj) {
   //Code Here
+  let { firstName } = obj;
+  let { lastName } = obj;
+  let { title } = obj;
 
   // Do not edit the code below.
   return "Hello, " + title + " " + firstName + " " + lastName + "!";
   // Do not edit the code above.
 }
+console.log(greeting(person));
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
@@ -119,6 +134,23 @@ function greeting(obj) {
 */
 
 //Code Here
+let states = {
+  utah: 10,
+  california: 20,
+  texas: 30,
+  arizona: 5  
+}
+
+let totalPopulation = obj => {
+  let { utah } = obj;
+  let { california } = obj;
+  let { texas } = obj;
+  let { arizona } = obj;
+  let sum = utah + california + texas + arizona;
+  return sum;
+}
+
+console.log(totalPopulation(states));
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
